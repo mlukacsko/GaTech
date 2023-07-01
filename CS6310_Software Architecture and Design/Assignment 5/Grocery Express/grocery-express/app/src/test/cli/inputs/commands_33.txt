@@ -1,0 +1,51 @@
+// create a single store
+make_store,fresh_market,57000
+display_stores
+// create multiple items to be sold by stores
+sell_item,fresh_market,bacon,3
+sell_item,fresh_market,lamb,6
+sell_item,fresh_market,mushrooms,3
+sell_item,fresh_market,salmon,4
+sell_item,fresh_market,sushi,3
+display_items,fresh_market
+// create a single pilot to control the drones
+make_pilot,alan2,Alan,Alexander,111-111-1111,111-11-1111,lic_2,4
+display_pilots
+// create a single drone to deliver the orders
+make_drone,fresh_market,1,50,2
+display_drones,fresh_market
+// create a single customers to purchase items
+make_customer,carli2,Chanel,Cortez,666-666-6666,4,100
+display_customers
+// assign pilots to fly the drones
+fly_drone,fresh_market,1,alan2
+display_drones,fresh_market
+// create multiple orders as requested by customers
+start_order,fresh_market,ordA,1,carli2
+start_order,fresh_market,ordB,1,carli2
+display_orders,fresh_market
+// add multiple items to the orders
+request_item,fresh_market,ordA,bacon,3,5
+request_item,fresh_market,ordA,lamb,1,10
+display_orders,fresh_market
+// display the state for the Fresh Market store
+display_stores
+display_customers
+display_orders,fresh_market
+display_drones,fresh_market
+display_pilots
+// deliver an order from Fresh Market and display the updated state
+purchase_order,fresh_market,ordA
+display_stores
+display_customers
+display_orders,fresh_market
+display_drones,fresh_market
+display_pilots
+// deliver an order from Fresh Market and display the updated state
+purchase_order,fresh_market,ordB
+display_stores
+display_customers
+display_orders,fresh_market
+display_drones,fresh_market
+display_pilots
+stop

@@ -1,0 +1,62 @@
+// create a single store
+make_store,fresh_market,57000
+display_stores
+// create multiple items to be sold by stores
+sell_item,fresh_market,bacon,3
+display_items,fresh_market
+// create multiple pilots to control the drones
+make_pilot,alan2,Alan,Alexander,111-111-1111,111-11-1111,lic_2,4
+make_pilot,gina3,Gina,Garcia,222-222-2222,222-22-2222,lic_3,6
+make_pilot,peter5,Peter,Parsons,333-333-3333,333-33-3333,lic_5,3
+display_pilots
+// create multiple drones to deliver the orders
+make_drone,fresh_market,1,10,3
+make_drone,fresh_market,2,5,0
+make_drone,fresh_market,3,6,2
+display_drones,fresh_market
+// create a customer to purchase items
+make_customer,carli2,Chanel,Cortez,666-666-6666,4,100
+display_customers
+// assign pilots to fly the drones
+fly_drone,fresh_market,1,alan2
+fly_drone,fresh_market,2,gina3
+fly_drone,fresh_market,3,peter5
+display_drones,fresh_market
+// create multiple orders as requested by customers
+start_order,fresh_market,ordA,1,carli2
+start_order,fresh_market,ordB,1,carli2
+start_order,fresh_market,ordC,2,carli2
+start_order,fresh_market,ordD,3,carli2
+display_orders,fresh_market
+display_drones,fresh_market
+// add multiple items to the orders
+request_item,fresh_market,ordA,bacon,1,5
+request_item,fresh_market,ordB,bacon,1,5
+display_orders,fresh_market
+display_drones,fresh_market
+request_item,fresh_market,ordC,bacon,1,5
+transfer_order,fresh_market,ordB,2
+display_orders,fresh_market
+display_drones,fresh_market
+request_item,fresh_market,ordD,bacon,1,5
+transfer_order,fresh_market,ordC,3
+display_orders,fresh_market
+display_drones,fresh_market
+transfer_order,fresh_market,ordD,1
+transfer_order,fresh_market,ordC,3
+transfer_order,fresh_market,ordC,2
+display_orders,fresh_market
+display_drones,fresh_market
+// deliver an order from Fresh Market and display the updated state
+display_efficiency
+purchase_order,fresh_market,ordA
+display_drones,fresh_market
+display_efficiency
+purchase_order,fresh_market,ordB
+display_drones,fresh_market
+display_efficiency
+purchase_order,fresh_market,ordD
+display_drones,fresh_market
+display_efficiency
+display_orders,fresh_market
+stop

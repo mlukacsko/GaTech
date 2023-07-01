@@ -1,0 +1,135 @@
+Welcome to the Grocery Express Delivery Service!
+> // create a single store
+> make_store,fresh_market,57000
+OK:change_completed
+> display_stores
+name:fresh_market,revenue:57000
+OK:display_completed
+> // create multiple items to be sold by stores
+> sell_item,fresh_market,bacon,3
+OK:change_completed
+> sell_item,fresh_market,lamb,6
+OK:change_completed
+> sell_item,fresh_market,mushrooms,3
+OK:change_completed
+> sell_item,fresh_market,salmon,4
+OK:change_completed
+> sell_item,fresh_market,sushi,3
+OK:change_completed
+> display_items,fresh_market
+bacon,3
+lamb,6
+mushrooms,3
+salmon,4
+sushi,3
+OK:display_completed
+> // create multiple pilots to control the drones
+> make_pilot,alan2,Alan,Alexander,111-111-1111,111-11-1111,lic_2,4
+OK:change_completed
+> make_pilot,connor13,Connor,Cross,555-555-5555,555-55-5555,lic_13,5
+OK:change_completed
+> display_pilots
+name:Alan_Alexander,phone:111-111-1111,taxID:111-11-1111,licenseID:lic_2,experience:4
+name:Connor_Cross,phone:555-555-5555,taxID:555-55-5555,licenseID:lic_13,experience:5
+OK:display_completed
+> // create a single drone to deliver the orders
+> make_drone,fresh_market,1,50,2
+OK:change_completed
+> display_drones,fresh_market
+droneID:1,total_cap:50,num_orders:0,remaining_cap:50,trips_left:2
+OK:display_completed
+> // create a single customer to purchase items
+> make_customer,carli2,Chanel,Cortez,666-666-6666,4,100
+OK:change_completed
+> display_customers
+name:Chanel_Cortez,phone:666-666-6666,rating:4,credit:100
+OK:display_completed
+> // assign pilots to fly the drones
+> fly_drone,fresh_market,1,alan2
+OK:change_completed
+> display_drones,fresh_market
+droneID:1,total_cap:50,num_orders:0,remaining_cap:50,trips_left:2,flown_by:Alan_Alexander
+OK:display_completed
+> // create multiple orders as requested by customers
+> start_order,fresh_market,ordA,1,carli2
+OK:change_completed
+> start_order,fresh_market,ordB,1,carli2
+OK:change_completed
+> display_orders,fresh_market
+orderID:ordA
+orderID:ordB
+OK:display_completed
+> // add multiple items to the orders
+> request_item,fresh_market,ordA,bacon,3,5
+OK:change_completed
+> request_item,fresh_market,ordA,lamb,1,10
+OK:change_completed
+> display_orders,fresh_market
+orderID:ordA
+item_name:bacon,total_quantity:3,total_cost:15,total_weight:9
+item_name:lamb,total_quantity:1,total_cost:10,total_weight:6
+orderID:ordB
+OK:display_completed
+> // deliver an order from Fresh Market and display the updated state
+> display_stores
+name:fresh_market,revenue:57000
+OK:display_completed
+> display_customers
+name:Chanel_Cortez,phone:666-666-6666,rating:4,credit:100
+OK:display_completed
+> display_orders,fresh_market
+orderID:ordA
+item_name:bacon,total_quantity:3,total_cost:15,total_weight:9
+item_name:lamb,total_quantity:1,total_cost:10,total_weight:6
+orderID:ordB
+OK:display_completed
+> display_drones,fresh_market
+droneID:1,total_cap:50,num_orders:2,remaining_cap:35,trips_left:2,flown_by:Alan_Alexander
+OK:display_completed
+> display_pilots
+name:Alan_Alexander,phone:111-111-1111,taxID:111-11-1111,licenseID:lic_2,experience:4
+name:Connor_Cross,phone:555-555-5555,taxID:555-55-5555,licenseID:lic_13,experience:5
+OK:display_completed
+> // deliver an order from Fresh Market and display the updated state
+> purchase_order,fresh_market,ordA
+OK:change_completed
+> display_stores
+name:fresh_market,revenue:57025
+OK:display_completed
+> display_customers
+name:Chanel_Cortez,phone:666-666-6666,rating:4,credit:75
+OK:display_completed
+> display_orders,fresh_market
+orderID:ordB
+OK:display_completed
+> display_drones,fresh_market
+droneID:1,total_cap:50,num_orders:1,remaining_cap:50,trips_left:1,flown_by:Alan_Alexander
+OK:display_completed
+> display_pilots
+name:Alan_Alexander,phone:111-111-1111,taxID:111-11-1111,licenseID:lic_2,experience:5
+name:Connor_Cross,phone:555-555-5555,taxID:555-55-5555,licenseID:lic_13,experience:5
+OK:display_completed
+> // assign a new pilot for a Fresh Market drone
+> fly_drone,fresh_market,1,connor13
+OK:change_completed
+> // deliver an order from Fresh Market and display the updated state
+> purchase_order,fresh_market,ordB
+OK:change_completed
+> display_stores
+name:fresh_market,revenue:57025
+OK:display_completed
+> display_customers
+name:Chanel_Cortez,phone:666-666-6666,rating:4,credit:75
+OK:display_completed
+> display_orders,fresh_market
+OK:display_completed
+> display_drones,fresh_market
+droneID:1,total_cap:50,num_orders:0,remaining_cap:50,trips_left:0,flown_by:Connor_Cross
+OK:display_completed
+> display_pilots
+name:Alan_Alexander,phone:111-111-1111,taxID:111-11-1111,licenseID:lic_2,experience:5
+name:Connor_Cross,phone:555-555-5555,taxID:555-55-5555,licenseID:lic_13,experience:6
+OK:display_completed
+> stop
+stop acknowledged
+simulation terminated

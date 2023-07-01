@@ -1,0 +1,45 @@
+Welcome to the Grocery Express Delivery Service!
+> // create a single store
+> make_store,fresh_market,57000
+OK:change_completed
+> // create an item to be sold in the store
+> sell_item,fresh_market,bacon,3
+OK:change_completed
+> // create a pilot
+> make_pilot,alan2,Alan,Alexander,111-111-1111,111-11-1111,lic_2,4
+OK:change_completed
+> // create a drone
+> make_drone,fresh_market,1,50,2
+OK:change_completed
+> // create a customer
+> make_customer,carli2,Chanel,Cortez,666-666-6666,4,100
+OK:change_completed
+> // assign the pilot to fly the drone
+> fly_drone,fresh_market,1,alan2
+OK:change_completed
+> // create an order
+> start_order,fresh_market,ordA,1,carli2
+OK:change_completed
+> // add an item to the order
+> request_item,fresh_market,ordA,bacon,3,5
+OK:change_completed
+> // cancel the order and display the updated state
+> cancel_order,fresh_market,ordA
+OK:change_completed
+> display_stores
+name:fresh_market,revenue:57000
+OK:display_completed
+> display_customers
+name:Chanel_Cortez,phone:666-666-6666,rating:4,credit:100
+OK:display_completed
+> display_orders,fresh_market
+OK:display_completed
+> display_drones,fresh_market
+droneID:1,total_cap:50,num_orders:0,remaining_cap:50,trips_left:2,flown_by:Alan_Alexander
+OK:display_completed
+> display_pilots
+name:Alan_Alexander,phone:111-111-1111,taxID:111-11-1111,licenseID:lic_2,experience:4
+OK:display_completed
+> stop
+stop acknowledged
+simulation terminated

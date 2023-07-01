@@ -1,0 +1,4 @@
+// create a pilot
+make_pilot,alan2,Alan,Alexander,111-111-1111,111-11-1111,lic_2,4
+display_pilots
+stop

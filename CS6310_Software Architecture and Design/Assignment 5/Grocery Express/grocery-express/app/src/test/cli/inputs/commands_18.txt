@@ -1,0 +1,4 @@
+// create a customer
+make_customer,carli2,Chanel,Cortez,666-666-6666,4,100
+display_customers
+stop

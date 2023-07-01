@@ -1,0 +1,51 @@
+insert into ge_store(name, earned_revenue) values('kroger',100)
+select * from ge_store;
+
+INSERT INTO ge_item(store_id,name,weight) values((select id from ge_store where name = 'kroger'
+),'cheese',4)
+select * from ge_item
+select i.* from ge_item i, ge_store s WHERE i.name = 'milk' AND s.name = 'kroger' and i.store_id = s.id
+
+
+INSERT INTO ge_person(phone_number,first_name,last_name) values('999-9999','MIKE','LUKACSKO')
+select * from ge_person
+
+INSERT INTO ge_employee(person_id,tax_id,months_worked_count,salary) values(1,'12345',3,4)
+select * from ge_employee
+
+INSERT INTO ge_pilot(employee_id,license_id,account_id,successful_delivery_count) values(1,'LID2',3,4)
+select * from ge_pilot
+
+INSERT INTO ge_drone(store_id,drone_id,pilot_id,weight_capacity,remaining_delivery_count) values((select id from ge_store where name = 'kroger'
+),1,4,40,9)
+select * from ge_drone
+
+INSERT INTO ge_customer(id,person_id,account_id,credits,rating) values((select id from ge_store where name = 'kroger'
+),1,'mike123',40,4)
+select * from ge_customer
+
+INSERT INTO ge_order(id,store_id,order_id,drone_id,customer_id) values((select id from ge_store where name = 'kroger'
+),1,1,3,1)
+select * from ge_order
+
+items
+1. sell item - store exists, item does not - done
+2. sell item - store does not exist - done
+3. sell item - store exists, item exists - done
+4. display item - store exists - done
+5. display item - store does not exist - done
+
+drone:
+make drone - store exists - done
+make drone - store does not exist - done
+make drone - store exists, drone id exists - drone
+display drone - store exists - done
+display drone - store does not exist - done
+
+order:
+make order - all parametes are good - done
+make order - store not valid - done
+make order - drone does not exist - done
+make order - customer does not exist - done
+display order - all parameters valid - done
+display order - invalid store - done

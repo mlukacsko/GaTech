@@ -1,0 +1,10 @@
+Welcome to the Grocery Express Delivery Service!
+> // create a pilot
+> make_pilot,alan2,Alan,Alexander,111-111-1111,111-11-1111,lic_2,4
+OK:change_completed
+> display_pilots
+name:Alan_Alexander,phone:111-111-1111,taxID:111-11-1111,licenseID:lic_2,experience:4
+OK:display_completed
+> stop
+stop acknowledged
+simulation terminated

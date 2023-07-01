@@ -1,0 +1,24 @@
+// create a single store
+make_store,fresh_market,57000
+// create an item to be sold in the store
+sell_item,fresh_market,bacon,3
+// create a pilot
+make_pilot,alan2,Alan,Alexander,111-111-1111,111-11-1111,lic_2,4
+// create a drone
+make_drone,fresh_market,1,50,2
+// create a customer
+make_customer,carli2,Chanel,Cortez,666-666-6666,4,100
+// assign the pilot to fly the drone
+fly_drone,fresh_market,1,alan2
+// create an order
+start_order,fresh_market,ordA,1,carli2
+// add an item to the order
+request_item,fresh_market,ordA,bacon,3,5
+// cancel the order and display the updated state
+cancel_order,fresh_market,ordA
+display_stores
+display_customers
+display_orders,fresh_market
+display_drones,fresh_market
+display_pilots
+stop

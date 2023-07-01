@@ -1,0 +1,7 @@
+In PyCharm:
+For project, New > open project.  File, Setting, python interpreter > gear.  Add exisitng, /home/mlukacsko/anaconda3/envs/ml4t/bin/python
+PYTHONPATH >> Run, edit configuration > environment variables list > add Name PYTHONPATH value ../:.
+
+to Run in CMD:
+conda activate ml4t (ml4t seen now)
+canivate to project folder, run PYTHONPATH=../:.. python {filename.py}

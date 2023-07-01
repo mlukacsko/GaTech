@@ -1,0 +1,6 @@
+// create a single store
+make_store,fresh_market,57000
+// create a drone
+make_drone,fresh_market,1,50,2
+display_drones,fresh_market
+stop

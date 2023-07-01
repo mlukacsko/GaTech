@@ -1,0 +1,10 @@
+// create a single store
+make_store,fresh_market,57000
+// create a drone
+make_drone,fresh_market,1,50,2
+// create a customer
+make_customer,carli2,Chanel,Cortez,666-666-6666,4,100
+// create an order
+start_order,fresh_market,ordA,1,carli2
+display_orders,fresh_market
+stop

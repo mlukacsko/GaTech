@@ -1,0 +1,17 @@
+Welcome to the Grocery Express Delivery Service!
+> // create multiple stores
+> make_store,fresh_market,57000
+OK:change_completed
+> make_store,publix,61000
+OK:change_completed
+> make_store,sprouts,33000
+OK:change_completed
+> // display stores in the order of their store name
+> display_stores
+name:fresh_market,revenue:57000
+name:publix,revenue:61000
+name:sprouts,revenue:33000
+OK:display_completed
+> stop
+stop acknowledged
+simulation terminated

@@ -1,0 +1,7 @@
+// create multiple customers to purchase items
+make_customer,carlos5,Carlos,Chavez,888-888-8888,5,600
+make_customer,henry3,Henry,Horton,777-777-7777,2,200
+make_customer,olivia7,Olivia,Olson,999-999-9999,4,300
+// display customers in the order of their customer ID
+display_customers
+stop

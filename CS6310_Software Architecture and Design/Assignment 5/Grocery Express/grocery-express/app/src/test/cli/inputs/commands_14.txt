@@ -1,0 +1,4 @@
+// create a single store
+make_store,aldi,20000
+display_stores
+stop

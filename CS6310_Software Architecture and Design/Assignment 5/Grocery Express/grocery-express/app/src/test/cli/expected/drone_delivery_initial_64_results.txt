@@ -1,0 +1,180 @@
+Welcome to the Grocery Express Delivery Service!
+> // create a single store
+> make_store,fresh_market,57000
+OK:change_completed
+> display_stores
+name:fresh_market,revenue:57000
+OK:display_completed
+> // create multiple items to be sold by stores
+> sell_item,fresh_market,bacon,3
+OK:change_completed
+> display_items,fresh_market
+bacon,3
+OK:display_completed
+> // create multiple pilots to control the drones
+> make_pilot,alan2,Alan,Alexander,111-111-1111,111-11-1111,lic_2,4
+OK:change_completed
+> make_pilot,gina3,Gina,Garcia,222-222-2222,222-22-2222,lic_3,6
+OK:change_completed
+> make_pilot,peter5,Peter,Parsons,333-333-3333,333-33-3333,lic_5,3
+OK:change_completed
+> display_pilots
+name:Alan_Alexander,phone:111-111-1111,taxID:111-11-1111,licenseID:lic_2,experience:4
+name:Gina_Garcia,phone:222-222-2222,taxID:222-22-2222,licenseID:lic_3,experience:6
+name:Peter_Parsons,phone:333-333-3333,taxID:333-33-3333,licenseID:lic_5,experience:3
+OK:display_completed
+> // create multiple drones to deliver the orders
+> make_drone,fresh_market,1,10,3
+OK:change_completed
+> make_drone,fresh_market,2,5,0
+OK:change_completed
+> make_drone,fresh_market,3,6,2
+OK:change_completed
+> display_drones,fresh_market
+droneID:1,total_cap:10,num_orders:0,remaining_cap:10,trips_left:3
+droneID:2,total_cap:5,num_orders:0,remaining_cap:5,trips_left:0
+droneID:3,total_cap:6,num_orders:0,remaining_cap:6,trips_left:2
+OK:display_completed
+> // create a customer to purchase items
+> make_customer,carli2,Chanel,Cortez,666-666-6666,4,100
+OK:change_completed
+> display_customers
+name:Chanel_Cortez,phone:666-666-6666,rating:4,credit:100
+OK:display_completed
+> // assign pilots to fly the drones
+> fly_drone,fresh_market,1,alan2
+OK:change_completed
+> fly_drone,fresh_market,2,gina3
+OK:change_completed
+> fly_drone,fresh_market,3,peter5
+OK:change_completed
+> display_drones,fresh_market
+droneID:1,total_cap:10,num_orders:0,remaining_cap:10,trips_left:3,flown_by:Alan_Alexander
+droneID:2,total_cap:5,num_orders:0,remaining_cap:5,trips_left:0,flown_by:Gina_Garcia
+droneID:3,total_cap:6,num_orders:0,remaining_cap:6,trips_left:2,flown_by:Peter_Parsons
+OK:display_completed
+> // create multiple orders as requested by customers
+> start_order,fresh_market,ordA,1,carli2
+OK:change_completed
+> start_order,fresh_market,ordB,1,carli2
+OK:change_completed
+> start_order,fresh_market,ordC,2,carli2
+OK:change_completed
+> start_order,fresh_market,ordD,3,carli2
+OK:change_completed
+> display_orders,fresh_market
+orderID:ordA
+orderID:ordB
+orderID:ordC
+orderID:ordD
+OK:display_completed
+> display_drones,fresh_market
+droneID:1,total_cap:10,num_orders:2,remaining_cap:10,trips_left:3,flown_by:Alan_Alexander
+droneID:2,total_cap:5,num_orders:1,remaining_cap:5,trips_left:0,flown_by:Gina_Garcia
+droneID:3,total_cap:6,num_orders:1,remaining_cap:6,trips_left:2,flown_by:Peter_Parsons
+OK:display_completed
+> // add multiple items to the orders
+> request_item,fresh_market,ordA,bacon,1,5
+OK:change_completed
+> request_item,fresh_market,ordB,bacon,1,5
+OK:change_completed
+> display_orders,fresh_market
+orderID:ordA
+item_name:bacon,total_quantity:1,total_cost:5,total_weight:3
+orderID:ordB
+item_name:bacon,total_quantity:1,total_cost:5,total_weight:3
+orderID:ordC
+orderID:ordD
+OK:display_completed
+> display_drones,fresh_market
+droneID:1,total_cap:10,num_orders:2,remaining_cap:4,trips_left:3,flown_by:Alan_Alexander
+droneID:2,total_cap:5,num_orders:1,remaining_cap:5,trips_left:0,flown_by:Gina_Garcia
+droneID:3,total_cap:6,num_orders:1,remaining_cap:6,trips_left:2,flown_by:Peter_Parsons
+OK:display_completed
+> request_item,fresh_market,ordC,bacon,1,5
+OK:change_completed
+> transfer_order,fresh_market,ordB,2
+ERROR:new_drone_does_not_have_enough_capacity
+> display_orders,fresh_market
+orderID:ordA
+item_name:bacon,total_quantity:1,total_cost:5,total_weight:3
+orderID:ordB
+item_name:bacon,total_quantity:1,total_cost:5,total_weight:3
+orderID:ordC
+item_name:bacon,total_quantity:1,total_cost:5,total_weight:3
+orderID:ordD
+OK:display_completed
+> display_drones,fresh_market
+droneID:1,total_cap:10,num_orders:2,remaining_cap:4,trips_left:3,flown_by:Alan_Alexander
+droneID:2,total_cap:5,num_orders:1,remaining_cap:2,trips_left:0,flown_by:Gina_Garcia
+droneID:3,total_cap:6,num_orders:1,remaining_cap:6,trips_left:2,flown_by:Peter_Parsons
+OK:display_completed
+> request_item,fresh_market,ordD,bacon,1,5
+OK:change_completed
+> transfer_order,fresh_market,ordC,3
+OK:change_completed
+> display_orders,fresh_market
+orderID:ordA
+item_name:bacon,total_quantity:1,total_cost:5,total_weight:3
+orderID:ordB
+item_name:bacon,total_quantity:1,total_cost:5,total_weight:3
+orderID:ordC
+item_name:bacon,total_quantity:1,total_cost:5,total_weight:3
+orderID:ordD
+item_name:bacon,total_quantity:1,total_cost:5,total_weight:3
+OK:display_completed
+> display_drones,fresh_market
+droneID:1,total_cap:10,num_orders:2,remaining_cap:4,trips_left:3,flown_by:Alan_Alexander
+droneID:2,total_cap:5,num_orders:0,remaining_cap:5,trips_left:0,flown_by:Gina_Garcia
+droneID:3,total_cap:6,num_orders:2,remaining_cap:0,trips_left:2,flown_by:Peter_Parsons
+OK:display_completed
+> transfer_order,fresh_market,ordD,1
+OK:change_completed
+> transfer_order,fresh_market,ordC,3
+OK:new_drone_is_current_drone_no_change
+> transfer_order,fresh_market,ordC,2
+OK:change_completed
+> display_orders,fresh_market
+orderID:ordA
+item_name:bacon,total_quantity:1,total_cost:5,total_weight:3
+orderID:ordB
+item_name:bacon,total_quantity:1,total_cost:5,total_weight:3
+orderID:ordC
+item_name:bacon,total_quantity:1,total_cost:5,total_weight:3
+orderID:ordD
+item_name:bacon,total_quantity:1,total_cost:5,total_weight:3
+OK:display_completed
+> display_drones,fresh_market
+droneID:1,total_cap:10,num_orders:3,remaining_cap:1,trips_left:3,flown_by:Alan_Alexander
+droneID:2,total_cap:5,num_orders:1,remaining_cap:2,trips_left:0,flown_by:Gina_Garcia
+droneID:3,total_cap:6,num_orders:0,remaining_cap:6,trips_left:2,flown_by:Peter_Parsons
+OK:display_completed
+> // deliver an order from Fresh Market and display the updated state
+> purchase_order,fresh_market,ordA
+OK:change_completed
+> display_drones,fresh_market
+droneID:1,total_cap:10,num_orders:2,remaining_cap:4,trips_left:2,flown_by:Alan_Alexander
+droneID:2,total_cap:5,num_orders:1,remaining_cap:2,trips_left:0,flown_by:Gina_Garcia
+droneID:3,total_cap:6,num_orders:0,remaining_cap:6,trips_left:2,flown_by:Peter_Parsons
+OK:display_completed
+> purchase_order,fresh_market,ordB
+OK:change_completed
+> display_drones,fresh_market
+droneID:1,total_cap:10,num_orders:1,remaining_cap:7,trips_left:1,flown_by:Alan_Alexander
+droneID:2,total_cap:5,num_orders:1,remaining_cap:2,trips_left:0,flown_by:Gina_Garcia
+droneID:3,total_cap:6,num_orders:0,remaining_cap:6,trips_left:2,flown_by:Peter_Parsons
+OK:display_completed
+> purchase_order,fresh_market,ordD
+OK:change_completed
+> display_drones,fresh_market
+droneID:1,total_cap:10,num_orders:0,remaining_cap:10,trips_left:0,flown_by:Alan_Alexander
+droneID:2,total_cap:5,num_orders:1,remaining_cap:2,trips_left:0,flown_by:Gina_Garcia
+droneID:3,total_cap:6,num_orders:0,remaining_cap:6,trips_left:2,flown_by:Peter_Parsons
+OK:display_completed
+> display_orders,fresh_market
+orderID:ordC
+item_name:bacon,total_quantity:1,total_cost:5,total_weight:3
+OK:display_completed
+> stop
+stop acknowledged
+simulation terminated

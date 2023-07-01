@@ -1,0 +1,28 @@
+services:
+  db:
+    build: ./docker/postgres
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    ports:
+      - "15432:${POSTGRES_PORT}"
+    volumes:
+      - ./docker/postgres/scripts:/docker-entrypoint-initdb.d
+  cli:
+    build:
+      dockerfile: ./docker/groceryexpress/Dockerfile
+      context: .
+    environment:
+      POSTGRES_HOST: db
+      POSTGRES_PORT: ${POSTGRES_PORT}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    entrypoint: java -jar app.jar
+    stdin_open: true # -i
+    tty: true # -t
+    deploy:
+      replicas: 2
+      restart_policy:
+        condition: unless-stopped

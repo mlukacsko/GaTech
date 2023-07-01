@@ -1,0 +1,70 @@
+Welcome to the Grocery Express Delivery Service!
+> // Since the base energy gain constants are fractional (to 2 digits) and are scaled with
+> // respect to the base drone energy cost, using a value of 100 keeps our energy gains / offsets
+> // as integer values, making them easy to make assertions on.
+> set_drone_energy_cost,100
+> // Set drone energy capacity
+> set_drone_energy_capacity,2000
+> // Make an order to a store that is 9 grid units (on both axes) away from customer that:
+> // * has 15 weight (within drone capacity of 20)
+> // * costs 50 credits (within customer amount of 100)
+> // * takes 13 hours for a drone to deliver (euclidean distance for sqrt((10-1)^2 + (10-1)^2) = ~12.73 -> 13 hours trip)
+> // * will consume 100 units of drone energy per hour, so 1300 units (out of total drone initial energy of 1500)
+> make_store,kroger,10000
+OK:change_completed
+> set_store_location,kroger,1,1
+> sell_item,kroger,cheesecake,5
+OK:change_completed
+> sell_item,kroger,chips,1
+OK:change_completed
+> make_drone,kroger,1,20,1500
+OK:change_completed
+> make_customer,gscoppino,Giuseppe,Scoppino,111-111-1111,5,100
+OK:change_completed
+> set_customer_location,gscoppino,10,10
+> start_order,kroger,1,1,gscoppino
+OK:change_completed
+> request_item,kroger,1,cheesecake,2,10
+OK:change_completed
+> request_item,kroger,1,chips,5,3
+OK:change_completed
+> // Make a pilot and assign them to the drone servicing the order
+> make_pilot,jdoe1,John,Doe,111-111-1111,taxId1,licenseId1,0
+OK:change_completed
+> fly_drone,kroger,1,jdoe1
+OK:change_completed
+> // Purchase order
+> purchase_order,kroger,1
+OK:change_completed
+> // Display drone status to observe the new energy level
+> // Original energy is 1500
+> // Energy loss is 100 (cost per hour) * 13 hours = 1300
+> // Energy gain "x" is:
+> // where x = 4(100 * 0.3) + (100 * 0.25) + 2(100 * 0.2) + (100 * 0.15) + (100 * 0.05) + (100 * 0.01)
+> //       x = 120 + 25 + 40 + 15 + 5 + 1
+> //       x = 206
+> // So new energy = 1500 - 1300 + 206 = 406
+> display_drones,kroger
+droneID:1,total_cap:20,num_orders:0,remaining_cap:20,trips_left:406,flown_by:John_Doe
+OK:display_completed
+> // Wait thirteen hours to allow drone to complete its order. It should not gain
+> // any energy during this time since its energy gain and loss for the trip has
+> // already been computed.
+> wait_until,02
+> // Wait until noon to gain energy. During this time it should gain energy according to:
+> // (100 * 0.01) + (100 * 0.05) + (100 * 0.07) + (100 * 0.09) + (100 * 0.10) + (100 * 0.15) + (100 * 0.20),
+> // so a total of 1 + 5 + 7 + 9 + 10 + 15 + 20 = 67 energy
+> wait_until,12
+> display_drones,kroger
+droneID:1,total_cap:20,num_orders:0,remaining_cap:20,trips_left:473,flown_by:John_Doe
+OK:display_completed
+> // Check the customer credits, they should have had an additional thirteen credits subtracted due to
+> // delivery time.
+> // 100 (original credits) - 35 (cost of order) - 13 (delivery fee) = 52 credits left
+> display_customers
+name:Giuseppe_Scoppino,phone:111-111-1111,rating:5,credit:52
+OK:display_completed
+> // Complete
+> stop
+stop acknowledged
+simulation terminated

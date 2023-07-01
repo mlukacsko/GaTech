@@ -1,0 +1,17 @@
+Welcome to the Grocery Express Delivery Service!
+> // create multiple pilots to control the drones
+> make_pilot,fiona8,Fiona,Fitzpatrick,444-444-4444,444-44-4444,lic_8,2
+OK:change_completed
+> make_pilot,gina3,Gina,Garcia,222-222-2222,222-22-2222,lic_3,6
+OK:change_completed
+> make_pilot,alan2,Alan,Alexander,111-111-1111,111-11-1111,lic_2,4
+OK:change_completed
+> // display the pilots in the order of their pilot ID
+> display_pilots
+name:Alan_Alexander,phone:111-111-1111,taxID:111-11-1111,licenseID:lic_2,experience:4
+name:Fiona_Fitzpatrick,phone:444-444-4444,taxID:444-44-4444,licenseID:lic_8,experience:2
+name:Gina_Garcia,phone:222-222-2222,taxID:222-22-2222,licenseID:lic_3,experience:6
+OK:display_completed
+> stop
+stop acknowledged
+simulation terminated

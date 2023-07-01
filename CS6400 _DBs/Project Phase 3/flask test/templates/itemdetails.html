@@ -1,0 +1,66 @@
+<h1>Item Details</h1>
+
+<!-- ========================== Part 1: List the item details ========================== -->
+<li>Item #     : {{ item_no }}</li>
+<li>Title      : {{ title }}</li>
+
+<!-- show GAMETYPE + MEDIA/PLATFORM only when showing video games -->
+{% if is_video_game == true %}
+<li>Platform   : {{ video_game_platform }}</li>
+<li>Media      : {{ media }}</li>
+<li>Game Type  : Video Game</li>
+{% endif %}
+<!-- show GAMETYPE + NUMBER_OF_CARDS only when showing collectible card games -->
+{% if is_collectible_card_game == true %}
+<li>number_of_cards   : {{ number_of_cards }}</li>
+<li>Game Type  : Collectible Card Game</li>
+{% endif %}
+<!-- show GAMETYPE only when showing playing card games -->
+{% if is_playing_card_game == true %}
+<li>Game Type  : Playing Card Game</li>
+{% endif %}
+<!-- show GAMETYPE only when showing playing card games -->
+{% if is_board_game == true %}
+<li>Game Type  : Board Game</li>
+{% endif %}
+{% if is_computer_game == true %}
+<li>Platform   : {{ computer_platform }}</li>
+<li>Game Type  : Computer Game</li>
+{% endif %}
+
+<li>Condition  : {{ condition }}</li>
+
+<!-- ============ Part 2: List owner details (only if you are viewing other's item) ========= -->
+{% if is_my_own_item == false %}
+    {% block content %}
+    <div>===== Item Owner's Info =====</div>
+    <li>Offered by: {{ item_owner_first_name }} {{ item_owner_last_name }} </li>
+    <li>Location: {{ item_owner_city }} {{ item_owner_state }} {{ item_onwer_postal_code }} </li>
+    <li>Response Time: TODO</li>
+    <li>Rank: TODO</li>
+    <li>
+        <!-- Show different background color based on distance -->
+        {% if background_color == "green" %}
+            <mark style="background-color: rgb(47, 255, 0);">Distance: {{ distance }}</mark></br>
+        {% elif background_color == "yellow" %}
+            <mark style="background-color: rgb(255, 230, 0);">Distance: {{ distance }}</mark></br>
+        {% elif background_color == "orange" %}
+            <mark style="background-color: rgb(157, 121, 6);">Distance: {{ distance }}</mark></br>
+        {% elif background_color == "red" %}
+            <mark style="background-color: rgb(243, 27, 8);">Distance: {{ distance }}</mark></br>
+        {% else %}
+            <mark style="background-color: rgb(8, 59, 243);">Distance: {{ distance }}</mark></br>
+        {% endif %}
+    </li></br>
+
+    <!-- <button type="submit" class="btn btn-default">Propose Trade</button></br></br> -->
+    <a href="/proposetrade" class="btn btn-primary btn-lg disabled" tabindex="-1" role="button" aria-disabled="true">Propose Trade</a><br><br><br>
+
+
+
+
+
+    {% endblock content %}
+{% else %}
+    <div>===== You are checking your own item =====</div>
+{% endif %}

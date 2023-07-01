@@ -1,0 +1,17 @@
+Welcome to the Grocery Express Delivery Service!
+> // create multiple customers to purchase items
+> make_customer,carlos5,Carlos,Chavez,888-888-8888,5,600
+OK:change_completed
+> make_customer,henry3,Henry,Horton,777-777-7777,2,200
+OK:change_completed
+> make_customer,olivia7,Olivia,Olson,999-999-9999,4,300
+OK:change_completed
+> // display customers in the order of their customer ID
+> display_customers
+name:Carlos_Chavez,phone:888-888-8888,rating:5,credit:600
+name:Henry_Horton,phone:777-777-7777,rating:2,credit:200
+name:Olivia_Olson,phone:999-999-9999,rating:4,credit:300
+OK:display_completed
+> stop
+stop acknowledged
+simulation terminated

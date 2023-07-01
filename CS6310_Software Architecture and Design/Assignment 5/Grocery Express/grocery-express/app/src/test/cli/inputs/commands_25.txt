@@ -1,0 +1,9 @@
+// create a single store
+make_store,fresh_market,57000
+// create multiple items to be sold by stores
+sell_item,fresh_market,bacon,3
+sell_item,fresh_market,lamb,6
+sell_item,fresh_market,mushrooms,3
+// display the items in the order of their item name
+display_items,fresh_market
+stop

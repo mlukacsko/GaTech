@@ -1,0 +1,7 @@
+// create multiple stores
+make_store,publix,61000
+make_store,fresh_market,57000
+make_store,sprouts,33000
+// display stores in the order of their store name
+display_stores
+stop

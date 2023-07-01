@@ -1,0 +1,6 @@
+// create a single store
+make_store,fresh_market,57000
+// create an item to be sold in the store
+sell_item,fresh_market,bacon,3
+display_items,fresh_market
+stop
