@@ -1,0 +1,11 @@
+starting RP
+For n_clusters = 2 The average silhouette_score is : 0.3449740051034408
+For n_clusters = 3 The average silhouette_score is : 0.3143840098608098
+For n_clusters = 4 The average silhouette_score is : 0.27998963703382607
+For n_clusters = 5 The average silhouette_score is : 0.15972213282998096
+For n_clusters = 6 The average silhouette_score is : 0.16253401800989778
+Inertia:  8904.195134262673
+Silhouette score:  0.32032572917171553
+Adjusted Mutual Information (AMI) score:  0.5321222589828749
+Adjusted Rand Index: 0.322
+RP Done

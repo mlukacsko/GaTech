@@ -1,0 +1,9 @@
+ICA Starting
+For n_clusters = 2 The average silhouette_score is : 0.29048079550111305
+For n_clusters = 3 The average silhouette_score is : 0.2414413195391244
+For n_clusters = 4 The average silhouette_score is : 0.17382808521646795
+For n_clusters = 5 The average silhouette_score is : 0.1237407398262778
+For n_clusters = 6 The average silhouette_score is : 0.10801143303381927
+Silhouette score:  0.12636986441208453
+Adjusted Mutual Information (AMI) score:  0.46360605934855204
+ARI: 0.5167396570025854

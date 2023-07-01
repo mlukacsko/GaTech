@@ -1,0 +1,29 @@
+assignment 2
+
+mlrose library --> hiive fork - use this.  
+
+find existing optimazation problems, dont need to create new
+k coloring (choose nuber of nodes to color), 4 peaks, flip flop, traveling salesman (choose number of cities)
+
+highlight one of three for each of the algorithms - vauge, left up to you....
+
+PLOTS
+fitness score x axis per iteration y axis
+how big should the problem space be? different algs highlights for different problem sizes.  tradeoff of problem size per algorithm
+wall clock time
+function evaluations per iteration (times as well) 
+
+
+
+
+second section - NN section.  NN from assignment 1.  this is using the datset
+comapre backprop to randomized optimized algs
+
+mlrose to sckitit learn have differences, can use new parameters...apple to apples is hard in some cases
+
+PLOTS
+learning curve
+validation curve
+loss curve - convergance
+compare confusion matricies, etc...more open ended approach
+wall clock times
