@@ -1,0 +1,176 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.7.17">
+  <diagram name="Page-1" id="bw_JEJf1bxe9cvYn9b_D">
+    <mxGraphModel dx="1290" dy="618" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="X86OW3zgJjNSxDQYE87a-1" value="Broth" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="50" y="75" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="X86OW3zgJjNSxDQYE87a-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="X86OW3zgJjNSxDQYE87a-2" target="X86OW3zgJjNSxDQYE87a-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="X86OW3zgJjNSxDQYE87a-2" value="Cooked Chicken &amp;amp; Noodles" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="50" y="205" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="X86OW3zgJjNSxDQYE87a-5" value="Base" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="85" y="165" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X86OW3zgJjNSxDQYE87a-6" value="Positive Example 1:&lt;div&gt;Chicken Noodle Soup&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="20" y="30" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="X86OW3zgJjNSxDQYE87a-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="X86OW3zgJjNSxDQYE87a-13" target="X86OW3zgJjNSxDQYE87a-23" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="X86OW3zgJjNSxDQYE87a-13" value="Broth" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="210" y="115" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="X86OW3zgJjNSxDQYE87a-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="X86OW3zgJjNSxDQYE87a-15" target="X86OW3zgJjNSxDQYE87a-13" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="X86OW3zgJjNSxDQYE87a-15" value="Cooked Ingredients" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="320" y="195" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="X86OW3zgJjNSxDQYE87a-16" value="Base" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="280" y="190" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X86OW3zgJjNSxDQYE87a-17" value="Negative Example 1:&lt;div&gt;Cereal and Milk&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="240" y="30" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="X86OW3zgJjNSxDQYE87a-23" value="Hot" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="330" y="75" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="X86OW3zgJjNSxDQYE87a-25" value="Temp" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="286" y="128" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X86OW3zgJjNSxDQYE87a-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="X86OW3zgJjNSxDQYE87a-27" target="X86OW3zgJjNSxDQYE87a-32" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="X86OW3zgJjNSxDQYE87a-27" value="Broth or Cream" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="470" y="117.5" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="X86OW3zgJjNSxDQYE87a-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="X86OW3zgJjNSxDQYE87a-29" target="X86OW3zgJjNSxDQYE87a-27" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="X86OW3zgJjNSxDQYE87a-29" value="Cooked Ingredients" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="580" y="197.5" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="X86OW3zgJjNSxDQYE87a-30" value="Base" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="540" y="192.5" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X86OW3zgJjNSxDQYE87a-31" value="Positive Example 2&lt;div&gt;Vichyssoise&amp;nbsp;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="500" y="32.5" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="X86OW3zgJjNSxDQYE87a-32" value="Hot or Cold" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="590" y="77.5" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="X86OW3zgJjNSxDQYE87a-33" value="Temp" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="546" y="130.5" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X86OW3zgJjNSxDQYE87a-34" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="X86OW3zgJjNSxDQYE87a-35" target="X86OW3zgJjNSxDQYE87a-40" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="X86OW3zgJjNSxDQYE87a-35" value="Rice not cooked into base" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="20" y="390" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="X86OW3zgJjNSxDQYE87a-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="X86OW3zgJjNSxDQYE87a-37" target="X86OW3zgJjNSxDQYE87a-35" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="X86OW3zgJjNSxDQYE87a-37" value="Cooked Ingredients" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="130" y="470" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="X86OW3zgJjNSxDQYE87a-38" value="Base" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="90" y="465" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X86OW3zgJjNSxDQYE87a-39" value="Negative Example 2&lt;div&gt;Jamba-laya&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="50" y="305" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="X86OW3zgJjNSxDQYE87a-40" value="Hot or Cold" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="140" y="350" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="X86OW3zgJjNSxDQYE87a-41" value="Temp" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="96" y="403" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X86OW3zgJjNSxDQYE87a-42" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="X86OW3zgJjNSxDQYE87a-43" target="X86OW3zgJjNSxDQYE87a-48" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="X86OW3zgJjNSxDQYE87a-43" value="Rice not cooked into base" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="250" y="390" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="X86OW3zgJjNSxDQYE87a-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="X86OW3zgJjNSxDQYE87a-45" target="X86OW3zgJjNSxDQYE87a-43" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="X86OW3zgJjNSxDQYE87a-45" value="Cooked Ingredients" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="301" y="510" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="X86OW3zgJjNSxDQYE87a-46" value="Base" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="304" y="465" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X86OW3zgJjNSxDQYE87a-47" value="Positive Example 3&lt;div&gt;French onion soup in a bread bowl&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="255" y="310" width="210" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="X86OW3zgJjNSxDQYE87a-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="X86OW3zgJjNSxDQYE87a-48" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="X86OW3zgJjNSxDQYE87a-48" value="Hot or Cold" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="370" y="350" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="X86OW3zgJjNSxDQYE87a-49" value="Temp" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="326" y="403" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X86OW3zgJjNSxDQYE87a-53" value="Bread or&amp;nbsp;&lt;div&gt;Bowl&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="400" y="460" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="X86OW3zgJjNSxDQYE87a-54" value="Served In" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="405" y="425" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X86OW3zgJjNSxDQYE87a-55" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="X86OW3zgJjNSxDQYE87a-56" target="X86OW3zgJjNSxDQYE87a-62" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="X86OW3zgJjNSxDQYE87a-56" value="Rice not cooked into base" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="500" y="390" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="X86OW3zgJjNSxDQYE87a-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="X86OW3zgJjNSxDQYE87a-58" target="X86OW3zgJjNSxDQYE87a-56" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="X86OW3zgJjNSxDQYE87a-58" value="Cooked Ingredients" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="551" y="510" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="X86OW3zgJjNSxDQYE87a-59" value="Base" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="554" y="465" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X86OW3zgJjNSxDQYE87a-60" value="Negative Example 3&lt;div&gt;Chili&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="596" y="305" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="X86OW3zgJjNSxDQYE87a-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="X86OW3zgJjNSxDQYE87a-62" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="690" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="X86OW3zgJjNSxDQYE87a-62" value="Hot or Cold" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="620" y="350" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="X86OW3zgJjNSxDQYE87a-63" value="Temp" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="576" y="403" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X86OW3zgJjNSxDQYE87a-67" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="X86OW3zgJjNSxDQYE87a-64" target="X86OW3zgJjNSxDQYE87a-66" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="X86OW3zgJjNSxDQYE87a-64" value="Bread or&amp;nbsp;&lt;div&gt;Bowl&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="650" y="460" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="X86OW3zgJjNSxDQYE87a-65" value="Served In" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="655" y="425" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X86OW3zgJjNSxDQYE87a-66" value="More liquid than other ingredients" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="737" y="360" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="X86OW3zgJjNSxDQYE87a-68" value="Liquid Ratio" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="727" y="458" width="90" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

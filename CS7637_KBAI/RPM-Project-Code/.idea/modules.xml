@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../BlockWorldAgent/.idea/BlockWorldAgent.iml" filepath="$PROJECT_DIR$/../BlockWorldAgent/.idea/BlockWorldAgent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../../../FantasyFootball/FantasyFootball/.idea/FantasyFootball.iml" filepath="$PROJECT_DIR$/../../../../../FantasyFootball/FantasyFootball/.idea/FantasyFootball.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Kbai_Gaming/.idea/Kbai_Gaming.iml" filepath="$PROJECT_DIR$/../Kbai_Gaming/.idea/Kbai_Gaming.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Mini Project 2/.idea/Mini Project 2.iml" filepath="$PROJECT_DIR$/../Mini Project 2/.idea/Mini Project 2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/RPM-Project-Code.iml" filepath="$PROJECT_DIR$/.idea/RPM-Project-Code.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Mini Project 1/SemanticNetsAgent/.idea/SemanticNetsAgent.iml" filepath="$PROJECT_DIR$/../Mini Project 1/SemanticNetsAgent/.idea/SemanticNetsAgent.iml" />
+    </modules>
+  </component>
+</project>
